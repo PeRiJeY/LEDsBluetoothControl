@@ -220,7 +220,7 @@ public class MainActivity extends AppCompatActivity {
         GlobalState.btMessage.getBrightness().setGreen(sliderGroupBrightnessSlider.getProgress());
         GlobalState.btMessage.getBrightness().setBlue(sliderGroupBrightnessSlider.getProgress());
 
-        GlobalState.btMessage.setSpeed(sliderGroupSpeedSlider.getProgress());
+        GlobalState.btMessage.setSpeed(sliderGroupSpeedSlider.getProgress() * 100);
     }
 
     public void sendMessageBT() {
